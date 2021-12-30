@@ -1,0 +1,286 @@
+#container{
+    /*width: 1450px;*/
+    margin: auto;
+    height: auto;
+}
+
+/* NavBar */
+.headerNavBar {
+    background-color: silver;
+}
+
+.headerNavBar__Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 100px;
+}
+.headerNavBar__Container ul{
+    display: flex;
+    margin-right: 20px;
+}
+
+.headerNavBar__Container ul li a{
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 0px 20px 0px 5px;
+    color:#D82C2C;
+}
+
+.headerNavBar__Container ul li a:hover{
+    border: 3px solid whitesmoke;
+    background-color: rgb(192, 191, 191);
+    border-radius: 20px 20px 5px 5px;
+    color:#D82C2C;
+}
+
+
+.headerNavBar__Container ul li,
+.headerNavBar__Container ul li a {
+    width: 100px;
+    margin: 0px;
+    text-decoration:none; 
+    list-style-type:none
+}
+
+
+
+
+
+/* En tete du blog*/
+
+
+#enTete .nomBlog h1 {
+    text-align: center;
+    font-size: 35px;
+    color: #D82C2C;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+   
+/* Corps du Blog*/
+
+#centerBlog{
+    display: flex;
+    clear: both;
+}
+
+.article{
+    width: 33.33%;
+    margin:0px 20px;
+    border-left: 10px solid #D82C2C;
+}
+
+.article:hover {
+    border-left: 10px solid gray; 
+}
+
+.article:active {
+    opacity: 0.80;
+}
+
+.imageFilm1 {
+    background-image: url(./img/imagesViking.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+
+}
+.imageFilm1 h3{
+    color: white;
+    padding-top: 92%;
+    margin: 0px 0px 10px 10px;
+
+}
+.imageFilm2 {
+    background-image: url(./img/2750210.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.imageFilm2 h3{
+    color: white;
+    padding-top: 92%;
+    margin: 0px 0px 10px 10px;
+
+}
+
+
+.imageFilm3 {
+    background-image: url(./img/SOA.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+}
+.imageFilm3 h3{
+    color: white;
+    padding-top: 92%;
+    margin: 0px 0px 10px 10px;
+
+}
+
+.noteCritique{
+    padding: 0px 15px;
+}
+
+.noteFilm{
+
+    float: left;
+    color: #D82C2C;
+    font-weight: bold;
+}
+
+.critiqueFilm{
+ 
+    float: right;
+}
+
+.resumeFilm{
+    display: inline-block;
+    padding: 2px 5px;
+
+}
+
+.resumeFilm p::first-letter{
+    font-size: 20px;
+    color: #D82C2C;
+}
+
+.resumeFilm p {
+    text-align: justify;
+
+}
+
+/* Formulaire */
+
+#formulaireCommentaire{
+    background-color: #D82C2C;
+    text-align: center;
+}
+
+#formulaireCommentaire h4{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+.pseudoFormulaire label,
+.mailFormulaire label,
+.noteFormulaire label,
+.messageFormulaire label{
+    font-size: 19px;
+    color: whitesmoke;
+}
+
+.pseudoFormulaire input,
+.mailFormulaire input,
+.noteFormulaire select{
+    border-radius: 5px ;
+}
+
+
+
+
+@media screen and (max-width:735px)  {
+    .imageFilm1 h3{
+        padding-top: 81%;
+
+    
+    } 
+    .imageFilm2 h3{
+        padding-top: 81%;
+
+    
+    }  
+    .imageFilm3 h3{
+        padding-top: 81%;
+
+    
+    } 
+    .article{
+        margin:0px 5px;
+
+    }
+
+    .noteFilm, .critiqueFilm {
+        font-size: 12px;
+    }
+
+ 
+
+}
+
+
+
+@media screen and (max-width:500px)  {
+
+    .headerNavBar__Container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #centerBlog{
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+    }
+
+    .article{
+        width: 100%;
+        margin: 5px 0px;
+    }
+
+    #enTete .nomBlog h1{
+        font-size: 26px;
+    }
+
+    .resumeFilm p{
+        margin-top: 0px;
+    }
+
+    .imageFilm1 {
+        width: 112%;
+    }
+    .imageFilm2{
+        width: 112%;
+    }
+    .imageFilm3{
+        width: 112%;
+    }
+    .headerNavBar__Container ul{
+        margin-top: 10px;
+    }
+    .headerNavBar__Container ul{
+        display: flex;
+        margin-right: 5px;
+    }
+
+}
+  
+@media screen and (max-width:286px) {
+    #enTete .nomBlog h1{
+        font-size: 20px;
+    }
+    .headerNavBar__Container ul{
+        margin: 0px;
+    }
+    
+}
+

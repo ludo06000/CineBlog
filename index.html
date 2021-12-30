@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Nouvelles Critiques</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <header id="enTete">
+            <nav class="headerNavBar">
+                <div class="headerNavBar__Container">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo Mes Nouvelles critiques">
+                    </div>
+                    <ul>
+                        <li><a href="#enTete">Accueil</a></li>
+                        <li><a href="#centerBlog">Critique</a></li>
+                        <li><a href="http://">Commentaire</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="nomBlog">
+                <h1>Mes Nouvelles Critiques</h1>
+            </div>
+
+        </header>
+        <main id="centerBlog">
+            <article class="article">
+                <div class="imageFilm1">
+                    <h3>Viking</h3>
+                </div>
+                <div class="noteCritique">
+                    <p class="noteFilm">4.8/5</p>
+                    <p class="critiqueFilm">Par Critique 1</p>
+                </div>
+                <div class="resumeFilm">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptatum ratione repellat explicabo iusto maiores ipsam consequatur. Amet, delectus quod fugiat praesentium, ullam facere voluptates, cumque dolorem accusamus et numquam.
+                        Pariatur a fugiat voluptas deserunt iusto consectetur ab. Perferendis, omnis facere quo distinctio dignissimos unde alias, aliquam in perspiciatis, quidem ea nesciunt rerum dolorum! Ipsam hic culpa minima repellendus in.
+                    </p>
+                </div>
+            </article>
+            <article class="article">
+                <div class="imageFilm2">
+                    <h3>Dr House</h3>
+                </div>
+                <div class="noteCritique">
+                    <p class="noteFilm">4.7/5</p>
+                    <p class="critiqueFilm">Par Critique 1</p>
+                </div>
+                <div class="resumeFilm">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptatum ratione repellat explicabo iusto maiores ipsam consequatur. Amet, delectus quod fugiat praesentium, ullam facere voluptates, cumque dolorem accusamus et numquam.
+                        Pariatur a fugiat voluptas deserunt iusto consectetur ab. Perferendis, omnis facere quo distinctio dignissimos unde alias, aliquam in perspiciatis, quidem ea nesciunt rerum dolorum! Ipsam hic culpa minima repellendus in.
+                    </p>
+                </div>
+            </article>
+            <article class="article">
+                <div class="imageFilm3">
+                    <h3>Son of Anarchy</h3>
+                </div>
+                <div class="noteCritique">
+                    <p class="noteFilm">4.7/5</p>
+                    <p class="critiqueFilm">Par Critique 1</p>
+                </div>
+                <div class="resumeFilm">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptatum ratione repellat explicabo iusto maiores ipsam consequatur. Amet, delectus quod fugiat praesentium, ullam facere voluptates, cumque dolorem accusamus et numquam.
+                        Pariatur a fugiat voluptas deserunt iusto consectetur ab. Perferendis, omnis facere quo distinctio dignissimos unde alias, aliquam in perspiciatis, quidem ea nesciunt rerum dolorum! Ipsam hic culpa minima repellendus in.
+                    </p>
+                </div>
+            </article>
+
+
+        </main>
+        <hr>
+
+        <form id="formulaireCommentaire" action="/formulaire-commentaire" method="POST">
+            <div class="titreCommentaire">
+                <h4>Laissez nous une commentaire sur les series !</h4>
+            </div>
+            <div class="pseudoFormulaire">
+                <label for="peudo">Votre Pseudo :</label>
+                <br>
+                <input type="text" id="pseudo" placeholder="Inscrire votre pseudo">
+            </div> 
+            <div class="mailFormulaire">
+                <label for="mail">Votre Mail :</label>
+                <br>
+                <input type="email" id="mail" name="votre-email" placeholder="Votre E-Mail">
+            </div>
+            <div class="noteFormulaire">
+                <label for="note">Laissez-nous une note sur 5 :</label>
+                <select name="note" id="note" required>
+                    <option value="1">⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                </select>
+
+            </div>
+            <br>
+            <div class="messageFormulaire">
+                <label for="message">Votre commentaire sur la recette Paris-Brest :</label>
+                <br>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Laissez-nous un petit commentaire !" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Envoyer !</button>
+            </div>
+        </form>
+
+
+
+
+    </div>
+  </body>
+</html>
